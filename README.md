@@ -111,10 +111,10 @@ score attributable to recall-detectable items — alongside the headline metric.
 @misc{leakage2026,
   title={Memorized but Not Realized: Frontier Language Models Precisely Recall Financial Fundamentals,
          but It Does Not Become Trading Skill},
-  author={Barj Capital Research},
+  author={Arjun Kathiravelu},
   year={2026},
   doi={10.5281/zenodo.20844335},
-  url={https://github.com/MisterKebab28/llm-leakage-instrument}
+  url={https://github.com/barj28/llm-leakage-instrument}
 }
 ```
 
