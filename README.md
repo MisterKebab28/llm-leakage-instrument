@@ -58,7 +58,7 @@ impossible) and **sensitive** (it fires where leakage is known to be present).
 | apparent agentic signal is a confound | `agentic_panel_fe.json` | +9.9pp → β=−0.018 under firm FE |
 | realistic backtest, Sharpe-decomposed | `backtest_summary.json` | no systematic pre/post or recall gap |
 | closed-API capacity | `armC_results.json` | 58.5–100% recall vs. 20% chance |
-| skill-residual power bound | `power_preregistration.json` | min detectable \|IC\| ≈ 0.02–0.03 |
+| skill-residual power bound | `power_postcutoff.json` | min detectable \|IC\| ≈ 0.012–0.016 (below the 0.02–0.05 strategy band) |
 
 ## Reproduce
 
