@@ -1,0 +1,28 @@
+{
+  "anthropic": {
+    "model": "claude-opus-4-8",
+    "n": 176,
+    "top1": 0.949,
+    "chance": 0.2,
+    "parse_rate": 1.0
+  },
+  "openai": {
+    "model": "gpt-5.1",
+    "n": 176,
+    "top1": 0.585,
+    "chance": 0.2,
+    "parse_rate": 1.0
+  },
+  "google": {
+    "model": "gemini-3.1-pro-preview",
+    "n": 176,
+    "top1": 1.0,
+    "chance": 0.2,
+    "parse_rate": 1.0
+  },
+  "_meta": {
+    "probe": "counterfactual MCQ value-recall (black-box)",
+    "live_calls_this_run": 352,
+    "comparison": "open-model vr_03 top-1: frontier 65-88%, chrono baseline ~chance"
+  }
+}

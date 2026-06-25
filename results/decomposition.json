@@ -1,0 +1,68 @@
+{
+  "design": "within-model per-decision transmission; correct ~ recall_hit + year FE",
+  "n_cells_panel": 1652,
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "by_model": {
+    "Qwen2.5-14B": {
+      "n_cells": 1652,
+      "n_recall_hit": 1000,
+      "recall_rate": 0.605,
+      "acc_recall_hit": 0.69,
+      "acc_recall_miss": 0.692,
+      "acc_diff_raw": -0.002,
+      "acc_diff_yearFE": 0.002,
+      "t_stat": 0.07,
+      "p_value": 0.9404,
+      "boot_ci95_raw_diff": [
+        -0.05,
+        0.045
+      ],
+      "down_year_acc_hit": 0.0,
+      "down_year_acc_miss": 0.0
+    },
+    "Mistral-Nemo-Base-2407": {
+      "n_cells": 1652,
+      "n_recall_hit": 1162,
+      "recall_rate": 0.703,
+      "acc_recall_hit": 0.688,
+      "acc_recall_miss": 0.702,
+      "acc_diff_raw": -0.014,
+      "acc_diff_yearFE": -0.014,
+      "t_stat": -0.64,
+      "p_value": 0.5246,
+      "boot_ci95_raw_diff": [
+        -0.063,
+        0.035
+      ],
+      "down_year_acc_hit": 0.027,
+      "down_year_acc_miss": 0.007
+    },
+    "Llama-3.1-8B": {
+      "n_cells": 1652,
+      "n_recall_hit": 1088,
+      "recall_rate": 0.659,
+      "acc_recall_hit": 0.685,
+      "acc_recall_miss": 0.697,
+      "acc_diff_raw": -0.012,
+      "acc_diff_yearFE": -0.01,
+      "t_stat": -0.46,
+      "p_value": 0.6466,
+      "boot_ci95_raw_diff": [
+        -0.058,
+        0.033
+      ],
+      "down_year_acc_hit": 0.0,
+      "down_year_acc_miss": 0.0
+    }
+  },
+  "interpretation": "acc_diff_yearFE > 0 with t large / CI excluding 0 => the model's directional decisions are more accurate on firm-years it can recall = recall capacity transmits to the decision, measured at high power (N=cells). This decomposes backtest 'skill' into a leakage-detectable component vs the rest."
+}

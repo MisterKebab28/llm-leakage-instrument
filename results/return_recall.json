@@ -1,0 +1,10 @@
+{
+  "n_cells": 15846,
+  "n_models": 19,
+  "dir_recall_seen": 0.638,
+  "dir_recall_unseen": 0.636,
+  "mag_recall_seen": 0.147,
+  "mag_recall_unseen": 0.135,
+  "mag_chance": 0.167,
+  "interpretation": "dir/mag recall >chance for seen and ->chance for unseen => the model memorises the CONTAMINATING variable (returns), cutoff-bounded; at chance => memorised-price fear weaker than memorised-fundamental capacity."
+}

@@ -1,0 +1,34 @@
+{
+  "design": "instruction-tuned agentic directional forecast; correct ~ recall_hit + year FE",
+  "note": "frac_decided_higher in (0.05,0.95) => decisions non-degenerate (the probe has power, unlike base models in vr_09). acc_diff_yearFE>0 with small p => transmission: recall capacity makes real decisions more accurate = the leakage->trading link, powered.",
+  "by_model": {
+    "Qwen2.5-7B-Instruct": {
+      "n_cells": 1652,
+      "frac_decided_higher": 0.284,
+      "decision_entropy_ok": true,
+      "overall_acc": 0.456,
+      "recall_rate": 0.413,
+      "acc_recall_hit": 0.518,
+      "acc_recall_miss": 0.413,
+      "acc_diff_yearFE": 0.099,
+      "t_stat": 4.07,
+      "p_value": 0.0,
+      "down_year_acc_hit": 0.654,
+      "down_year_acc_miss": 0.869
+    },
+    "Qwen2.5-14B-Instruct": {
+      "n_cells": 1652,
+      "frac_decided_higher": 0.883,
+      "decision_entropy_ok": true,
+      "overall_acc": 0.678,
+      "recall_rate": 0.607,
+      "acc_recall_hit": 0.677,
+      "acc_recall_miss": 0.68,
+      "acc_diff_yearFE": 0.003,
+      "t_stat": 0.12,
+      "p_value": 0.9044,
+      "down_year_acc_hit": 0.144,
+      "down_year_acc_miss": 0.204
+    }
+  }
+}

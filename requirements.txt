@@ -1,0 +1,13 @@
+# Core (white-box probing + analysis). GPU strongly recommended for the open-model roster.
+# Tested with Python 3.13, CUDA 12.8 on an NVIDIA RTX 5090 (sm_120).
+torch>=2.10
+transformers>=4.57          # Gemma-4 (gemma4_unified) additionally needs transformers>=5.10 in a separate env
+peft>=0.13                  # LoRA positive control (armB_*)
+accelerate>=1.0
+duckdb>=1.1                 # read-only access to the point-in-time backbone
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13                 # clustered-SE / power analysis
+matplotlib>=3.8             # figures
+# Closed-API arm (vr_C_api.py, vr_13_api.py) uses only the Python standard library (urllib);
+# keys are read from the environment (OPENAI_API_KEY, ANTHROPIC_API_KEY, GOOGLE_API_KEY).

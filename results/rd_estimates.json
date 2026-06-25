@@ -1,0 +1,46 @@
+{
+  "n_cells": 19950,
+  "n_models": 19,
+  "pre_post_means": {
+    "recall_pre": 0.296,
+    "recall_post": 0.172,
+    "trading_pre": 0.649,
+    "trading_post": 0.65
+  },
+  "recall_RD_h4": {
+    "jump": 0.0214,
+    "se": 0.0206,
+    "t": 1.04,
+    "p": 0.3126,
+    "bandwidth": 4,
+    "n": 12777,
+    "n_models": 19
+  },
+  "trading_RD_h4": {
+    "jump": 0.0097,
+    "se": 0.0268,
+    "t": 0.36,
+    "p": 0.7232,
+    "bandwidth": 4,
+    "n": 12777,
+    "n_models": 19
+  },
+  "recall_RD_h6": {
+    "jump": -0.0135,
+    "se": 0.0176,
+    "t": -0.77,
+    "p": 0.4531,
+    "bandwidth": 6,
+    "n": 16584,
+    "n_models": 19
+  },
+  "trading_RD_h6": {
+    "jump": -0.0698,
+    "se": 0.0165,
+    "t": -4.23,
+    "p": 0.0005,
+    "bandwidth": 6,
+    "n": 16584,
+    "n_models": 19
+  }
+}

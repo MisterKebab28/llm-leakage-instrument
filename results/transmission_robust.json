@@ -1,0 +1,105 @@
+{
+  "n_models": 14,
+  "models": [
+    "Mistral-Nemo-Base-2407",
+    "Qwen2.5-14B",
+    "Mistral-7B-v0.3",
+    "Llama-3.1-8B",
+    "granite-3.1-8b-base",
+    "Qwen3-14B-Base",
+    "Qwen3-8B-Base",
+    "gemma-3-4b-pt",
+    "OLMo-2-1124-13B",
+    "glm-4-9b-hf",
+    "Qwen2.5-7B",
+    "Yi-1.5-9B",
+    "Falcon3-10B-Base",
+    "Qwen3-4B-Base"
+  ],
+  "pearson": 0.044,
+  "spearman": 0.161,
+  "bootstrap_ci95": [
+    -0.487,
+    0.669
+  ],
+  "leave_one_out_pearson": {
+    "Mistral-Nemo-Base-2407": -0.104,
+    "Qwen2.5-14B": 0.357,
+    "Mistral-7B-v0.3": -0.042,
+    "Llama-3.1-8B": 0.113,
+    "granite-3.1-8b-base": 0.027,
+    "Qwen3-14B-Base": 0.036,
+    "Qwen3-8B-Base": 0.044,
+    "gemma-3-4b-pt": 0.042,
+    "OLMo-2-1124-13B": 0.044,
+    "glm-4-9b-hf": 0.056,
+    "Qwen2.5-7B": 0.069,
+    "Yi-1.5-9B": -0.079,
+    "Falcon3-10B-Base": 0.066,
+    "Qwen3-4B-Base": 0.04
+  },
+  "loo_range": [
+    -0.104,
+    0.357
+  ],
+  "most_influential": "Mistral-Nemo-Base-2407",
+  "verdict": "Report the transmission link with these robustness stats. If the bootstrap CI spans ~0 or LOO swings sign, downgrade from 'result' to 'suggestive, underpowered' and do not headline the point estimate.",
+  "per_model": {
+    "Mistral-Nemo-Base-2407": {
+      "capacity": 0.926,
+      "realized_leakage": 0.17
+    },
+    "Qwen2.5-14B": {
+      "capacity": 0.909,
+      "realized_leakage": -0.115
+    },
+    "Mistral-7B-v0.3": {
+      "capacity": 0.898,
+      "realized_leakage": 0.144
+    },
+    "Llama-3.1-8B": {
+      "capacity": 0.881,
+      "realized_leakage": -0.002
+    },
+    "granite-3.1-8b-base": {
+      "capacity": 0.847,
+      "realized_leakage": 0.094
+    },
+    "Qwen3-14B-Base": {
+      "capacity": 0.83,
+      "realized_leakage": 0.083
+    },
+    "Qwen3-8B-Base": {
+      "capacity": 0.784,
+      "realized_leakage": 0.064
+    },
+    "gemma-3-4b-pt": {
+      "capacity": 0.767,
+      "realized_leakage": 0.039
+    },
+    "OLMo-2-1124-13B": {
+      "capacity": 0.761,
+      "realized_leakage": 0.072
+    },
+    "glm-4-9b-hf": {
+      "capacity": 0.761,
+      "realized_leakage": 0.156
+    },
+    "Qwen2.5-7B": {
+      "capacity": 0.727,
+      "realized_leakage": 0.126
+    },
+    "Yi-1.5-9B": {
+      "capacity": 0.648,
+      "realized_leakage": -0.04
+    },
+    "Falcon3-10B-Base": {
+      "capacity": 0.591,
+      "realized_leakage": 0.077
+    },
+    "Qwen3-4B-Base": {
+      "capacity": 0.5,
+      "realized_leakage": 0.061
+    }
+  }
+}

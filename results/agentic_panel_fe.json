@@ -1,0 +1,30 @@
+{
+  "Qwen2.5-14B-Instruct": {
+    "frac_higher": 0.883,
+    "recall_rate": 0.607,
+    "diff_yearFE_only": 0.0026,
+    "twoway_firm_year_FE": {
+      "beta_twowayFE": 0.025,
+      "cluster_se": 0.0321,
+      "t": 0.78,
+      "p": 0.4378,
+      "n_firms": 222,
+      "n": 1652
+    },
+    "verdict": "vanishes under firm FE (prominence confound)"
+  },
+  "Qwen2.5-7B-Instruct": {
+    "frac_higher": 0.284,
+    "recall_rate": 0.413,
+    "diff_yearFE_only": 0.0991,
+    "twoway_firm_year_FE": {
+      "beta_twowayFE": -0.018,
+      "cluster_se": 0.0354,
+      "t": -0.51,
+      "p": 0.6117,
+      "n_firms": 222,
+      "n": 1652
+    },
+    "verdict": "vanishes under firm FE (prominence confound)"
+  }
+}

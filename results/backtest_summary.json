@@ -1,0 +1,242 @@
+{
+  "Qwen2.5-14B-Instruct": {
+    "model": "Qwen2.5-14B-Instruct",
+    "n_decisions": 2751,
+    "frac_outperform": 0.385,
+    "all": {
+      "sharpe": -0.285,
+      "ann_ret": -0.039,
+      "maxdd": -0.393,
+      "n_months": 92,
+      "n_dec": 2751
+    },
+    "pre_cutoff": {
+      "sharpe": -0.353,
+      "ann_ret": -0.0515,
+      "maxdd": -0.343,
+      "n_months": 69,
+      "n_dec": 2061
+    },
+    "post_cutoff": {
+      "sharpe": -0.014,
+      "ann_ret": -0.0014,
+      "maxdd": -0.171,
+      "n_months": 23,
+      "n_dec": 690
+    },
+    "recall_hit": {
+      "sharpe": -0.164,
+      "ann_ret": -0.0266,
+      "maxdd": -0.42,
+      "n_months": 92,
+      "n_dec": 932
+    },
+    "recall_miss": {
+      "sharpe": -0.303,
+      "ann_ret": -0.0441,
+      "maxdd": -0.391,
+      "n_months": 92,
+      "n_dec": 1819
+    }
+  },
+  "Llama-3.1-8B-Instruct": {
+    "model": "Llama-3.1-8B-Instruct",
+    "n_decisions": 2760,
+    "frac_outperform": 0.662,
+    "all": {
+      "sharpe": 0.594,
+      "ann_ret": 0.0685,
+      "maxdd": -0.192,
+      "n_months": 92,
+      "n_dec": 2760
+    },
+    "pre_cutoff": {
+      "sharpe": 0.467,
+      "ann_ret": 0.055,
+      "maxdd": -0.192,
+      "n_months": 69,
+      "n_dec": 2070
+    },
+    "post_cutoff": {
+      "sharpe": 1.023,
+      "ann_ret": 0.109,
+      "maxdd": -0.109,
+      "n_months": 23,
+      "n_dec": 690
+    },
+    "recall_hit": {
+      "sharpe": 0.25,
+      "ann_ret": 0.0381,
+      "maxdd": -0.45,
+      "n_months": 92,
+      "n_dec": 935
+    },
+    "recall_miss": {
+      "sharpe": 0.72,
+      "ann_ret": 0.0861,
+      "maxdd": -0.203,
+      "n_months": 92,
+      "n_dec": 1825
+    }
+  },
+  "Qwen2.5-7B-Instruct": {
+    "model": "Qwen2.5-7B-Instruct",
+    "n_decisions": 2760,
+    "frac_outperform": 0.498,
+    "all": {
+      "sharpe": 0.177,
+      "ann_ret": 0.0239,
+      "maxdd": -0.25,
+      "n_months": 92,
+      "n_dec": 2760
+    },
+    "pre_cutoff": {
+      "sharpe": 0.043,
+      "ann_ret": 0.0061,
+      "maxdd": -0.25,
+      "n_months": 69,
+      "n_dec": 2070
+    },
+    "post_cutoff": {
+      "sharpe": 0.71,
+      "ann_ret": 0.0773,
+      "maxdd": -0.148,
+      "n_months": 23,
+      "n_dec": 690
+    },
+    "recall_hit": {
+      "sharpe": 0.107,
+      "ann_ret": 0.0175,
+      "maxdd": -0.371,
+      "n_months": 92,
+      "n_dec": 734
+    },
+    "recall_miss": {
+      "sharpe": 0.16,
+      "ann_ret": 0.0234,
+      "maxdd": -0.255,
+      "n_months": 92,
+      "n_dec": 2026
+    }
+  },
+  "api-gpt-4o-mini": {
+    "model": "api-gpt-4o-mini",
+    "n_decisions": 2746,
+    "frac_outperform": 0.456,
+    "all": {
+      "sharpe": 0.011,
+      "ann_ret": 0.0014,
+      "maxdd": -0.237,
+      "n_months": 92,
+      "n_dec": 2746
+    },
+    "pre_cutoff": {
+      "sharpe": -0.113,
+      "ann_ret": -0.0161,
+      "maxdd": -0.237,
+      "n_months": 69,
+      "n_dec": 2059
+    },
+    "post_cutoff": {
+      "sharpe": 0.561,
+      "ann_ret": 0.0541,
+      "maxdd": -0.138,
+      "n_months": 23,
+      "n_dec": 687
+    },
+    "recall_hit": {
+      "sharpe": -0.202,
+      "ann_ret": -0.034,
+      "maxdd": -0.329,
+      "n_months": 92,
+      "n_dec": 838
+    },
+    "recall_miss": {
+      "sharpe": 0.057,
+      "ann_ret": 0.0077,
+      "maxdd": -0.259,
+      "n_months": 92,
+      "n_dec": 1908
+    }
+  },
+  "api-claude-haiku-4-5": {
+    "model": "api-claude-haiku-4-5",
+    "n_decisions": 2760,
+    "frac_outperform": 0.337,
+    "all": {
+      "sharpe": -0.389,
+      "ann_ret": -0.0449,
+      "maxdd": -0.469,
+      "n_months": 92,
+      "n_dec": 2760
+    },
+    "pre_cutoff": {
+      "sharpe": -0.062,
+      "ann_ret": -0.0073,
+      "maxdd": -0.348,
+      "n_months": 69,
+      "n_dec": 2070
+    },
+    "post_cutoff": {
+      "sharpe": -1.572,
+      "ann_ret": -0.1579,
+      "maxdd": -0.222,
+      "n_months": 23,
+      "n_dec": 690
+    },
+    "recall_hit": {
+      "sharpe": -0.276,
+      "ann_ret": -0.0412,
+      "maxdd": -0.484,
+      "n_months": 92,
+      "n_dec": 848
+    },
+    "recall_miss": {
+      "sharpe": -0.344,
+      "ann_ret": -0.0415,
+      "maxdd": -0.464,
+      "n_months": 92,
+      "n_dec": 1912
+    }
+  },
+  "api-gemini-2.5-flash": {
+    "model": "api-gemini-2.5-flash",
+    "n_decisions": 2735,
+    "frac_outperform": 0.361,
+    "all": {
+      "sharpe": 0.08,
+      "ann_ret": 0.0097,
+      "maxdd": -0.379,
+      "n_months": 92,
+      "n_dec": 2735
+    },
+    "pre_cutoff": {
+      "sharpe": 0.527,
+      "ann_ret": 0.0672,
+      "maxdd": -0.156,
+      "n_months": 69,
+      "n_dec": 2055
+    },
+    "post_cutoff": {
+      "sharpe": -1.947,
+      "ann_ret": -0.1628,
+      "maxdd": -0.31,
+      "n_months": 23,
+      "n_dec": 680
+    },
+    "recall_hit": {
+      "sharpe": 0.161,
+      "ann_ret": 0.0187,
+      "maxdd": -0.327,
+      "n_months": 92,
+      "n_dec": 2238
+    },
+    "recall_miss": {
+      "sharpe": -0.049,
+      "ann_ret": -0.0101,
+      "maxdd": -0.553,
+      "n_months": 92,
+      "n_dec": 497
+    }
+  }
+}

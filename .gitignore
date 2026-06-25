@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.duckdb
+*.parquet
+.env
+*.key
+cache.json
+hf_cache/
+models/

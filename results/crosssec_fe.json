@@ -1,0 +1,51 @@
+{
+  "design": "cross-sectional relative (outperform median) ~ recall_hit + firm+year FE; balanced label",
+  "by_model": {
+    "Qwen2.5-14B-Instruct": {
+      "n": 5737,
+      "frac_outperform": 0.295,
+      "overall_acc": 0.548,
+      "recall_rate": 0.441,
+      "acc_hit": 0.564,
+      "acc_miss": 0.536,
+      "twoway_firm_year_FE": {
+        "beta": -0.0029,
+        "se": 0.018,
+        "t": -0.16,
+        "p": 0.8708,
+        "n": 5737
+      }
+    },
+    "Llama-3.1-8B-Instruct": {
+      "n": 5563,
+      "frac_outperform": 0.654,
+      "overall_acc": 0.521,
+      "recall_rate": 0.512,
+      "acc_hit": 0.539,
+      "acc_miss": 0.503,
+      "twoway_firm_year_FE": {
+        "beta": 0.0328,
+        "se": 0.0182,
+        "t": 1.81,
+        "p": 0.071,
+        "n": 5563
+      }
+    },
+    "Qwen2.5-7B-Instruct": {
+      "n": 5737,
+      "frac_outperform": 0.239,
+      "overall_acc": 0.523,
+      "recall_rate": 0.291,
+      "acc_hit": 0.536,
+      "acc_miss": 0.518,
+      "twoway_firm_year_FE": {
+        "beta": 0.0185,
+        "se": 0.018,
+        "t": 1.03,
+        "p": 0.3032,
+        "n": 5737
+      }
+    }
+  },
+  "interpretation": "FE beta>0, p<0.05 => value-conditioned transmission (leakage realizes in relative ranking). Null => dissociation holds for ranking too."
+}

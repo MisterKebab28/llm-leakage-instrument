@@ -1,0 +1,95 @@
+{
+  "purpose": "Pre-registered dependence-corrected detectable |IC| (v5 section 3).",
+  "window_start": "2025-01-01",
+  "universe_rule": "top raw_symbols by median dollar volume, >= 270 of ~290 days",
+  "primary_universe": "top1000",
+  "panel_primary": {
+    "N": 1000,
+    "N_full_cov": 223,
+    "T_days": 289,
+    "rho_raw": 0.1821,
+    "rho_resid": 0.0185,
+    "pc1_var": 0.3807,
+    "top5_var": 0.5316,
+    "top10_var": 0.6128
+  },
+  "effective_breadth": {
+    "portfolio_sharpe_Neff": 5.5,
+    "cross_sectional_IC_Neff": 51.3,
+    "formula": "N / (1 + (N-1)*rho_bar)"
+  },
+  "detectable_mean_abs_IC": {
+    "v4_naive_breadth_N": 0.0036,
+    "cross_section_corrected_breadth_Neff": 0.0161,
+    "understatement_factor_vs_naive": 4.41,
+    "formula": "1.96 / sqrt(N_eff * T)"
+  },
+  "time_axis_newey_west": {
+    "placebo_momentum": {
+      "signal": "21-day momentum",
+      "lookback_days": 21,
+      "n_ic_days": 267,
+      "ic_mean": 0.0155,
+      "ic_lag1_phi": -0.0998
+    },
+    "placebo_reversal": {
+      "signal": "5-day reversal",
+      "lookback_days": 5,
+      "n_ic_days": 283,
+      "ic_mean": 0.0117,
+      "ic_lag1_phi": -0.1836
+    },
+    "headline_phi_used": 0.0,
+    "se_inflation": 1.0,
+    "detectable_abs_IC_after_NW": 0.0161,
+    "protocol_phi_band_0.2_0.3": {
+      "phi=0.2": 0.0197,
+      "phi=0.25": 0.0208,
+      "phi=0.3": 0.0219
+    },
+    "note": "momentum-class signals run in runs (positive phi -> inflation); reversal is negative phi (no inflation). The actual LLM IC series's phi is computed at trade time and substituted here."
+  },
+  "universe_sensitivity": {
+    "top296": {
+      "N": 296,
+      "N_full_cov": 129,
+      "T_days": 289,
+      "rho_raw": 0.1768,
+      "rho_resid": 0.0347,
+      "pc1_var": 0.418,
+      "top5_var": 0.5704,
+      "top10_var": 0.6581,
+      "Neff_ic": 26.3,
+      "detectable_abs_IC_iid": 0.0225
+    },
+    "top500": {
+      "N": 500,
+      "N_full_cov": 166,
+      "T_days": 289,
+      "rho_raw": 0.1774,
+      "rho_resid": 0.027,
+      "pc1_var": 0.4022,
+      "top5_var": 0.5547,
+      "top10_var": 0.6395,
+      "Neff_ic": 34.5,
+      "detectable_abs_IC_iid": 0.0196
+    },
+    "top1000": {
+      "N": 1000,
+      "N_full_cov": 223,
+      "T_days": 289,
+      "rho_raw": 0.1821,
+      "rho_resid": 0.0185,
+      "pc1_var": 0.3807,
+      "top5_var": 0.5316,
+      "top10_var": 0.6128,
+      "Neff_ic": 51.3,
+      "detectable_abs_IC_iid": 0.0161
+    }
+  },
+  "grounding_note_vs_v5_section3": "Measured raw pairwise corr ~0.18 / PC1 ~0.40 on a fully-specified liquid common-stock universe, NOT v5's 0.088 / 0.253 (unreproducible from text). The IC test trades the RESIDUAL corr, which DOES reproduce (~0.019-0.021); the detectable-|IC| conclusion is therefore robust to the discrepancy.",
+  "preregistered_decision_rule": {
+    "report_IC_gap_only_if_post_cutoff_abs_IC_exceeds": 0.0219,
+    "else": "report a UNIFORM post-cutoff null (neither IC nor Sharpe identified); do NOT sell an 'IC-detectable != Sharpe-rankable' gap."
+  }
+}

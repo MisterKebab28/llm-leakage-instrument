@@ -1,0 +1,179 @@
+{
+  "probe": "within-model counterfactual value-recall (revenue)",
+  "distractor_multipliers": [
+    0.5,
+    0.7,
+    1.4,
+    2.0
+  ],
+  "n_facts": 176,
+  "by_model": {
+    "Falcon3-10B-Base": {
+      "mean_margin_nll": 3.16,
+      "median_margin": 2.6543,
+      "share_true_top1": 0.591,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.665,
+      "n": 176
+    },
+    "Llama-3.1-8B": {
+      "mean_margin_nll": 7.8998,
+      "median_margin": 7.8191,
+      "share_true_top1": 0.881,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.153,
+      "n": 176
+    },
+    "Mistral-7B-v0.3": {
+      "mean_margin_nll": 5.7524,
+      "median_margin": 5.7099,
+      "share_true_top1": 0.898,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.136,
+      "n": 176
+    },
+    "Mistral-Nemo-Base-2407": {
+      "mean_margin_nll": 6.9734,
+      "median_margin": 7.491,
+      "share_true_top1": 0.926,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.091,
+      "n": 176
+    },
+    "OLMo-2-1124-13B": {
+      "mean_margin_nll": 5.6536,
+      "median_margin": 5.6447,
+      "share_true_top1": 0.761,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.392,
+      "n": 176
+    },
+    "Qwen2.5-14B": {
+      "mean_margin_nll": 6.3098,
+      "median_margin": 6.7255,
+      "share_true_top1": 0.909,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.119,
+      "n": 176
+    },
+    "Qwen2.5-7B": {
+      "mean_margin_nll": 4.2371,
+      "median_margin": 3.8103,
+      "share_true_top1": 0.727,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.403,
+      "n": 176
+    },
+    "Qwen3-14B-Base": {
+      "mean_margin_nll": 5.2155,
+      "median_margin": 5.3774,
+      "share_true_top1": 0.83,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.278,
+      "n": 176
+    },
+    "Qwen3-4B-Base": {
+      "mean_margin_nll": 2.2587,
+      "median_margin": 2.0859,
+      "share_true_top1": 0.5,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.903,
+      "n": 176
+    },
+    "Qwen3-8B-Base": {
+      "mean_margin_nll": 4.2386,
+      "median_margin": 4.0318,
+      "share_true_top1": 0.784,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.278,
+      "n": 176
+    },
+    "Yi-1.5-9B": {
+      "mean_margin_nll": 3.4691,
+      "median_margin": 3.378,
+      "share_true_top1": 0.648,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.574,
+      "n": 176
+    },
+    "chrono-2014": {
+      "mean_margin_nll": 0.0196,
+      "median_margin": 0.0222,
+      "share_true_top1": 0.028,
+      "chance_top1": 0.201,
+      "mean_rank_true": 3.0,
+      "n": 176
+    },
+    "chrono-2016": {
+      "mean_margin_nll": 0.0215,
+      "median_margin": -0.0065,
+      "share_true_top1": 0.011,
+      "chance_top1": 0.201,
+      "mean_rank_true": 2.989,
+      "n": 176
+    },
+    "chrono-2018": {
+      "mean_margin_nll": -0.0017,
+      "median_margin": 0.0234,
+      "share_true_top1": 0.023,
+      "chance_top1": 0.201,
+      "mean_rank_true": 2.989,
+      "n": 176
+    },
+    "chrono-2020": {
+      "mean_margin_nll": 0.0009,
+      "median_margin": 0.0194,
+      "share_true_top1": 0.023,
+      "chance_top1": 0.201,
+      "mean_rank_true": 2.994,
+      "n": 176
+    },
+    "chrono-2022": {
+      "mean_margin_nll": -0.0047,
+      "median_margin": -0.0232,
+      "share_true_top1": 0.023,
+      "chance_top1": 0.201,
+      "mean_rank_true": 2.966,
+      "n": 176
+    },
+    "chrono-2024": {
+      "mean_margin_nll": -0.0529,
+      "median_margin": -0.0262,
+      "share_true_top1": 0.023,
+      "chance_top1": 0.201,
+      "mean_rank_true": 3.011,
+      "n": 176
+    },
+    "gemma-3-4b-pt": {
+      "mean_margin_nll": 4.3691,
+      "median_margin": 4.5052,
+      "share_true_top1": 0.767,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.358,
+      "n": 176
+    },
+    "glm-4-9b-hf": {
+      "mean_margin_nll": 5.186,
+      "median_margin": 5.0044,
+      "share_true_top1": 0.761,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.42,
+      "n": 176
+    },
+    "granite-3.1-8b-base": {
+      "mean_margin_nll": 4.8187,
+      "median_margin": 4.7678,
+      "share_true_top1": 0.847,
+      "chance_top1": 0.201,
+      "mean_rank_true": 1.205,
+      "n": 176
+    }
+  },
+  "chrono_seen_vs_unseen": {
+    "margin_seen": -0.0171,
+    "margin_unseen": 0.0142,
+    "top1_seen": 0.024,
+    "top1_unseen": 0.019
+  },
+  "interpretation": "margin>0 and share_true_top1>chance => the model prefers the REALIZED value over counterfactuals = value-recall capacity. Expectation: chrono-gpt ~chance (1.5B no-capacity floor); Qwen3-8B above chance if frontier models carry the capacity that LLM-trading studies would mistake for skill."
+}
