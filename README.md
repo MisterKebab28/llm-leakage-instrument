@@ -1,5 +1,8 @@
 # A Validated Instrument for Memorization Leakage in LLM Trading Evaluation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20844335.svg)](https://doi.org/10.5281/zenodo.20844335)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Reference implementation and reproduction artifact for the paper
 *"Memorized but Not Realized: Frontier Language Models Precisely Recall Financial Fundamentals,
 but It Does Not Become Trading Skill."*
@@ -109,7 +112,9 @@ score attributable to recall-detectable items — alongside the headline metric.
   title={Memorized but Not Realized: Frontier Language Models Precisely Recall Financial Fundamentals,
          but It Does Not Become Trading Skill},
   author={Barj Capital Research},
-  year={2026}
+  year={2026},
+  doi={10.5281/zenodo.20844335},
+  url={https://github.com/MisterKebab28/llm-leakage-instrument}
 }
 ```
 
