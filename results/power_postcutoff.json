@@ -1,0 +1,33 @@
+{
+  "N=293": {
+    "N": 293,
+    "T_days": 542,
+    "rho_residual": 0.0234,
+    "N_eff": 37.4,
+    "mde_iid": 0.0138,
+    "phi_measured": 0.009,
+    "mde_NW_measured": 0.0139,
+    "mde_NW_phi0.25": 0.0188
+  },
+  "N=987": {
+    "N": 987,
+    "T_days": 536,
+    "rho_residual": 0.0268,
+    "N_eff": 35.9,
+    "mde_iid": 0.0141,
+    "phi_measured": -0.074,
+    "mde_NW_measured": 0.0141,
+    "mde_NW_phi0.25": 0.0192
+  },
+  "N=1979": {
+    "N": 1979,
+    "T_days": 531,
+    "rho_residual": 0.0184,
+    "N_eff": 53.0,
+    "mde_iid": 0.0117,
+    "phi_measured": -0.096,
+    "mde_NW_measured": 0.0117,
+    "mde_NW_phi0.25": 0.0159
+  },
+  "note": "Full post-cutoff window 2024-01->present. N_eff saturates (~1/rho_residual) because names co-move, so adding firms past ~1000 barely moves the bound; the longer T does the work. Compare to the earlier ~289-day, 296-name panel (MDE 0.02-0.03)."
+}
